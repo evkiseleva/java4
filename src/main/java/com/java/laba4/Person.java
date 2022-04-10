@@ -53,7 +53,7 @@ public class Person {
         this.salary = salary;
     }
 
-    public String printPerson()
+    public String getPerson()
     {
         return "id: "+ id + " name: " + name + " gender: " + gender + " bDate: " + bDate +
                 " division: "+ division.get() + " salary: " + salary;

@@ -3,13 +3,13 @@ package com.java.laba4;
 import java.util.ArrayList;
 
 public class Divisions {
-    public ArrayList<Division> divisions = new ArrayList<>();
-    private int count;
-    public int getId(String name)
+    public static ArrayList<Division> divisions = new ArrayList<>();
+    private static int count;
+    public static int getId(String name)
     {
         for(int i = 0; i < divisions.size(); i++)
         {
-            if(divisions.get(i).getName() == name)
+            if(name.equals(divisions.get(i).getName()))
             {
                 return divisions.get(i).getId();
             }
@@ -18,6 +18,7 @@ public class Divisions {
         Division newDivision = new Division();
         newDivision.setName(name);
         newDivision.setId(count);
+        divisions.add(newDivision);
         return newDivision.getId();
     }
 

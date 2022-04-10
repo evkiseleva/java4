@@ -24,6 +24,6 @@ public class Division {
 
     public String get()
     {
-        return "(id)" + id + ", (name)" + name;
+        return "(id)" + id + ",(name)" + name;
     }
 }
