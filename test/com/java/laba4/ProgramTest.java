@@ -10,6 +10,7 @@ class ProgramTest {
 
     @Test
     void people() throws IOException {
-        assertNotEquals(null, Program.people());
+        String fileName="foreign_names.csv";
+        assertNotEquals(null, Program.people(fileName));
     }
 }
